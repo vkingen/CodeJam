@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="Kaffepletten" size="10.000000 2.648985" />
+    <ImageTarget name="Bird" size="10.000000 4.405450" />
     <ImageTarget name="Toilet" size="10.000000 9.789157" />
     <ImageTarget name="Rushmore" size="10.000000 13.333333" />
     <ImageTarget name="LilleHavfrue" size="10.000000 13.333333" />
