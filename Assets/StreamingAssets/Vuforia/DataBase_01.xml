@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Toilet" size="10.000000 9.789157" />
+    <ImageTarget name="Rushmore" size="10.000000 13.333333" />
+    <ImageTarget name="LilleHavfrue" size="10.000000 13.333333" />
+    <ImageTarget name="20220405_123112" size="10.000000 7.500000" />
+    <ImageTarget name="scoopy" size="10.000000 11.229404" />
+  </Tracking>
+</QCARConfig>
