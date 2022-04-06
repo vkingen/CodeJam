@@ -4,22 +4,17 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    private static SoundManager instance;
+    public static SoundManager instance;
 
-    [SerializeField] private AudioSource _soundOne,_soundTwo,soundThree;
+    [SerializeField] private AudioSource _sound;
 
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
-
     
+    public void Sound(AudioClip clip)
+    {
+        _sound.PlayOneShot(clip);
+    }
 }
