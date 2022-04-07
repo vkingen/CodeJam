@@ -1,0 +1,33 @@
+{
+    "name": "Acc",
+    "maps": [
+        {
+            "name": "GetAcc",
+            "id": "ee1b3f01-e043-4365-8f5b-e1a025311b50",
+            "actions": [
+                {
+                    "name": "AccData",
+                    "type": "Value",
+                    "id": "3def7c69-6871-4cb2-9eef-9e9cca78ae7c",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5f0cc5c8-664a-48e3-8b70-7ea11207b68a",
+                    "path": "<Accelerometer>/acceleration",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AccData",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
