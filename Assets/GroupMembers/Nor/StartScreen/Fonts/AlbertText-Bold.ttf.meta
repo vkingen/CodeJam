@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9b21a1768bca344158054d3bfe41ad78
+guid: 9638591f352fd43d1948361887c8cf81
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -7,16 +7,16 @@ TrueTypeFontImporter:
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
-  includeFontData: 1
-  fontName: Candy Queen Demo Beck McCormick
+  includeFontData: 0
+  fontName: Albert Text
   fontNames:
-  - Candy Queen Demo Beck McCormick
+  - Albert Text
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
-  shouldRoundAdvanceValue: 1
+  shouldRoundAdvanceValue: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
