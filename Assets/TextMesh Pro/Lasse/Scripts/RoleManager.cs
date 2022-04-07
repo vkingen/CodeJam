@@ -22,4 +22,9 @@ public class RoleManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
+
+    public void ChooseRole(int roleNum)
+    {
+        role = roleNum;
+    }
 }
