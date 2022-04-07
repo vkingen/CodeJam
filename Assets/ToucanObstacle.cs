@@ -5,6 +5,13 @@ using UnityEngine;
 public class ToucanObstacle : MonoBehaviour
 {
     public Vector3 direction;
+    public string bird, pointTrigger;
+    ToucanCharacterController _toucanCharacterController;
+
+    private void Start()
+    {
+        _toucanCharacterController = FindObjectOfType<ToucanCharacterController>();
+    }
 
     private void FixedUpdate()
     {
@@ -14,5 +21,13 @@ public class ToucanObstacle : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Application.LoadLevel(Application.loadedLevel);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == pointTrigger)
+        {
+            _toucanCharacterController.AddPoint();
+        }
     }
 }
