@@ -10,6 +10,7 @@ public class RepeatPatternGame : MonoBehaviour
     [SerializeField] GameObject[] rowLights; //Array containing the row of images that change color according to level.
     [SerializeField] int[] lightOrder; //
     [SerializeField] GameObject repeatPatternGamePanel;
+    [SerializeField] GameObject startGameButton;
 
     private int _level = 0;
     private int _buttonsClicked;
@@ -28,13 +29,15 @@ public class RepeatPatternGame : MonoBehaviour
 
     private void Start()
     {
-        //repeatPatternGamePanel.SetActive(false);
+        repeatPatternGamePanel.SetActive(false);
     }
 
-    private void Update()
+    public void StartGame()
     {
-        
+        startGameButton.SetActive(false);
+        repeatPatternGamePanel.SetActive(true);        
     }
+
 
     public void OnEnable()
     {
@@ -53,7 +56,10 @@ public class RepeatPatternGame : MonoBehaviour
 
         _level = 1;
 
-        StartCoroutine(ColorOrder());
+        if(repeatPatternGamePanel == isActiveAndEnabled)
+        {
+            StartCoroutine(ColorOrder());
+        }
     }
     public void ButtonClickOrder(int button)
     {
@@ -128,7 +134,6 @@ public class RepeatPatternGame : MonoBehaviour
 
         if (_won == true)
         {
-            Debug.Log("Put won stuff here");
             ClosePanel();
         }
 
