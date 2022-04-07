@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/TextMesh Pro/Lasse/Scenes/Minigame_Lasse.unity
+    guid: 76c9284adcf0f2e4d91a949e14507757
+  - enabled: 1
     path: Assets/TextMesh Pro/Lasse/Scenes/AR_Test_Lasse.unity
     guid: eba20cdc7785bcc4a9cf05863a23131f
   m_configObjects: {}
