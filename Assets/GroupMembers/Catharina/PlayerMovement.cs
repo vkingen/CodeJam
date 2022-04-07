@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public TMP_Text pointText;
 
     public Joystick joystick;
+    bool isTouchingButton = false;
     
 
     private void Start() {
@@ -22,8 +23,26 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update() 
     {
-        //movement = joystick.Horizontal("Horizontal") * moveSpeed;
-          
+        //movement = joystick.Horizontal * moveSpeed;
+       // if(isTouchingButton == false)
+            
+
+
+
+    }
+
+    public void ResetRotation()
+    {
+        movement = 0;
+    }
+
+    public void RotateRight()
+    {
+        movement = 1f;
+    }
+    public void RotateLeft()
+    {
+        movement = -1f;
     }
     private void FixedUpdate()
     {

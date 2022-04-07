@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/GroupMembers/Catharina/CatharinaMinigame.unity
+    guid: b6f8f9397375833478260b18f154420e
+  - enabled: 1
     path: Assets/GroupMembers/Marius/ChoosePlayerScreen/ChoosePlayer 1.unity
     guid: a686f6894c6904bcc9bb9c18113c46be
   - enabled: 1
