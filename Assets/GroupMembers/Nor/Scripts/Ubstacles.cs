@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Ubstacles : MonoBehaviour
 {
+    
     public string ball = "Ball";
     //method that detects collider //Slå the lige op
     private void OnTriggerEnter(Collider other)
@@ -15,4 +16,5 @@ public class Ubstacles : MonoBehaviour
 
         }
     }
+    
 }
