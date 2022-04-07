@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9b21a1768bca344158054d3bfe41ad78
+guid: 2ee10550ef9ae4109b55842049078d8c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Candy Queen Demo Beck McCormick
+  fontName: Campinas
   fontNames:
-  - Candy Queen Demo Beck McCormick
+  - Campinas
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
