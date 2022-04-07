@@ -8,19 +8,21 @@ public class PlayerMovement : MonoBehaviour
 
 
 {
-    // Start is called before the first frame update
+    
     public float moveSpeed = 600f;
     float movement = 0f;
     public int points = 5;
     public TMP_Text pointText;
-    // Update is called once per frame
+
+    public Joystick joystick;
+    
 
     private void Start() {
         pointText.text = points.ToString();
     }
     void Update() 
     {
-        movement = Input.GetAxisRaw("Horizontal");
+        //movement = joystick.Horizontal("Horizontal") * moveSpeed;
           
     }
     private void FixedUpdate()
