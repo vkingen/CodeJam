@@ -739,6 +739,7 @@ MonoBehaviour:
   points: 10
   pointText: {fileID: 561784331}
   joystick: {fileID: 2035323406}
+  nextSceneIndex: 4
 --- !u!1 &1414575155
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Joystick joystick;
     bool isTouchingButton = false;
+
+    public int nextSceneIndex;
     
 
     private void Start() {
@@ -57,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
             pointText.text = points.ToString();
             if(points <= 0)
             {
+                
+                MainSceneManager.instance.LoadNextScene(nextSceneIndex);
                 Debug.Log("WIN and change scene.s");
             }
         }
