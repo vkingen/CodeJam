@@ -16,7 +16,7 @@ public class MoleScript : MonoBehaviour
         
     }
 
-    void SpawnMole()
+    public void SpawnMole()
     {
         Mole.transform.position = SpawnPoint[Random.Range(0, SpawnPoint.Length)].transform.position;
     }
