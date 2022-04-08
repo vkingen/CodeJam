@@ -5,40 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/GroupMembers/Nor/StartScreen/StartScreen.unity
     guid: bba8ce7fb923b4f9da11e5baa0dac494
-  - enabled: 0
+  - enabled: 1
     path: Assets/GroupMembers/Marius/ChoosePlayerScreen/ChoosePlayer 1.unity
     guid: a686f6894c6904bcc9bb9c18113c46be
-  - enabled: 0
+  - enabled: 1
     path: Assets/TextMesh Pro/Lasse/Scenes/IntroScreen.unity
     guid: d82ae41f5795fe74d89f9eab21ebb8f1
-  - enabled: 0
+  - enabled: 1
     path: Assets/TextMesh Pro/Lasse/Scenes/PuzzleScreens/FirstPuzzle.unity
     guid: d83b7c8d11741134aac7b7b6ba84b030
-  - enabled: 0
+  - enabled: 1
     path: Assets/GroupMembers/Marius/RepeatPatternGame/RepeatPatternGame.unity
     guid: 5e749b391fcbfa14282ae5e9250cadee
-  - enabled: 0
+  - enabled: 1
     path: Assets/TextMesh Pro/Lasse/Scenes/PuzzleScreens/SecondPuzzle.unity
     guid: 47c053c715f2573418d6b6a43daaa53a
-  - enabled: 0
+  - enabled: 1
     path: Assets/TextMesh Pro/Lasse/Scenes/Minigame_Lasse.unity
     guid: 76c9284adcf0f2e4d91a949e14507757
-  - enabled: 0
+  - enabled: 1
     path: Assets/TextMesh Pro/Lasse/Scenes/PuzzleScreens/ThirdPuzzle.unity
     guid: 783ae32da0fa46141bde7c998c255a5c
-  - enabled: 0
+  - enabled: 1
     path: Assets/GroupMembers/Catharina/CatharinaMinigame.unity
     guid: b6f8f9397375833478260b18f154420e
   - enabled: 1
     path: Assets/GroupMembers/Nor/MiniGame/NorsMiniGame.unity
     guid: 4ea3180e1aaf5458dabdc1c75a8e92ca
-  - enabled: 0
+  - enabled: 1
     path: Assets/GroupMembers/Nicola/Scenes/ShakeItForClueMinigame.unity
     guid: 783154b87a0cb1a49812e6873cae74ee
-  - enabled: 0
+  - enabled: 1
     path: Assets/GroupMembers/Aske/AskeMiniGameScene.unity
     guid: 01627307a29e9a449a05ba8a75609078
   - enabled: 1
