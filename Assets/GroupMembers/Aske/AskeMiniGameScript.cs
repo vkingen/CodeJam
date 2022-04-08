@@ -78,11 +78,11 @@ public class AskeMiniGameScript : MonoBehaviour
     {
         while (moleHit == false)
         {
-            delayTimeNotVisible = Random.Range(10, 10); //this comtrols the amount of time the mole is not visible
+            delayTimeNotVisible = Random.Range(3, 3); //this comtrols the amount of time the mole is not visible
             yield return new WaitForSeconds(delayTimeNotVisible);
             Mole.SetActive(true);
             moleVisible = true;
-            delayTimeVisible = Random.Range(2, 2); //this comtrols the amount of time the mole is visible
+            delayTimeVisible = Random.Range(3, 3); //this comtrols the amount of time the mole is visible
             yield return new WaitForSeconds(delayTimeVisible);
             Mole.SetActive(false);
             moleVisible = false;

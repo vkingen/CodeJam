@@ -17,10 +17,12 @@ public class ToucanCharacterController : MonoBehaviour
 
     public GameObject tutorial_Panel;
     bool gameHasStarted = false;
+    AudioSource audioSource;
     //Acc acc;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
         _rigidbody = GetComponent<Rigidbody>();
         Physics.gravity = newGravity;
@@ -52,6 +54,7 @@ public class ToucanCharacterController : MonoBehaviour
     public void AddPoint()
     {
         totalPoints++;
+        audioSource.Play();
         pointText.text = totalPoints.ToString();
         if (totalPoints >= 0)
         {
