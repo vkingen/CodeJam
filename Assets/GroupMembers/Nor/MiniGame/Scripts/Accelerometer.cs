@@ -20,7 +20,7 @@ public class Accelerometer : MonoBehaviour
     {
 
         Vector3 tilt = Input.acceleration;
-        tilt.z = 0;
+        //tilt.z = 0;
 
         //makes sure that when it is flat the tilt points downwards
         if (isFlat)
