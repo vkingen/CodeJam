@@ -13,15 +13,28 @@ public class ToucanCharacterController : MonoBehaviour
     private Vector3 newGravity;
     public int totalPoints = 0;
     public TMP_Text pointText;
+    ObstacleSpawner obstacleSpawner;
+
+    public GameObject tutorial_Panel;
+    bool gameHasStarted = false;
     //Acc acc;
 
     private void Start()
     {
+        obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
         _rigidbody = GetComponent<Rigidbody>();
         Physics.gravity = newGravity;
-        pointText.text = totalPoints.ToString();
+        pointText.text = "";
         //acc = new Acc();
         //InputSystem.EnableDevice(LinearAccelerationSensor.current);
+    }
+
+    public void StartGame()
+    {
+        tutorial_Panel.SetActive(false);
+        gameHasStarted = true;
+        obstacleSpawner.SendWaves();
+        pointText.text = totalPoints.ToString();
     }
 
     private void FixedUpdate()
@@ -29,8 +42,12 @@ public class ToucanCharacterController : MonoBehaviour
         //Vector3 test = acc.GetAcc.AccData.ReadValue<Vector3>();
         //_acceleration = test.y;
         //Debug.Log(test);
-        _acceleration = Input.acceleration.y;
-        _rigidbody.AddForce(transform.up * _acceleration * speed);
+        if(gameHasStarted)
+        {
+            _acceleration = Input.acceleration.y;
+            _rigidbody.AddForce(transform.up * _acceleration * speed);
+        }
+        
     }
     public void AddPoint()
     {
