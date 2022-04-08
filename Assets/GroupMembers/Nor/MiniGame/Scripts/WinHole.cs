@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WinHole : MonoBehaviour
 {
+    public int index;
     public string ball = "Ball";
 
 
@@ -11,7 +12,7 @@ public class WinHole : MonoBehaviour
     {
         if(other.tag == ball)
         {
-            Debug.Log("WIN!");
+            MainSceneManager.instance.LoadNextScene(index);
 
         }
     }
