@@ -107,7 +107,7 @@ public class RepeatPatternGame : MonoBehaviour
     {
         DisableInteractableButtons();
 
-        for(int j = 0; j < 3; j++)
+        for(int j = 0; j < 3; j++) //This for loop controls t
         {
             Debug.Log("I run this many times" + j);
 
