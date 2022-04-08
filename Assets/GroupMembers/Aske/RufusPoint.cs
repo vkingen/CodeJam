@@ -6,6 +6,8 @@ public class RufusPoint : MonoBehaviour
 {
     public Text MyText;
     private int score;
+
+    public TMP_Text pointText;
  
  
     // Use this for initialization
