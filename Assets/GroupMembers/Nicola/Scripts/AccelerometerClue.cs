@@ -44,6 +44,7 @@ public class AccelerometerClue : MonoBehaviour
     {
         if (_threshCounter == limit)
         {
+            MainSceneManager.instance.LoadNextScene(2); // make variable instead of magic number
             Debug.Log("Won Game - move to next scene and get clue");
         }
     }
