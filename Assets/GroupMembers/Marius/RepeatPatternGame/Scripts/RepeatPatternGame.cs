@@ -8,9 +8,11 @@ public class RepeatPatternGame : MonoBehaviour
     [SerializeField] GameObject[] buttons; //Array of buttons that are to be pressed based on the pattern. 
     [SerializeField] GameObject[] lightArray; //Array containing the images that change color to form a pattern.
     [SerializeField] GameObject[] rowLights; //Array containing the row of images that change color according to level.
-    [SerializeField] int[] lightOrder; //
+    [SerializeField] int[] lightOrder; //This contains the randomly generated light order
+
     [SerializeField] GameObject repeatPatternGamePanel;
     [SerializeField] GameObject startGameButton;
+    [SerializeField] GameObject instructionClue;
 
     private int _level = 0;
     private int _buttonsClicked;
@@ -35,7 +37,8 @@ public class RepeatPatternGame : MonoBehaviour
     public void StartGame()
     {
         startGameButton.SetActive(false);
-        repeatPatternGamePanel.SetActive(true);        
+        instructionClue.SetActive(false);
+        repeatPatternGamePanel.SetActive(true);
     }
 
 
