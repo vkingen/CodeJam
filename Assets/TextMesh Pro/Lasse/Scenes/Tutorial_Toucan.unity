@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 1904591548}
   - component: {fileID: 1904591547}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Tutorial_Toucan_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
