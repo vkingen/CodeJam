@@ -13,4 +13,8 @@ public class StartButton : MonoBehaviour
         Debug.Log("Next Scene");
         MainSceneManager.instance.LoadNextScene(index);
     }
+    public void QuitApp()
+    {
+        MainSceneManager.instance.QuitApp();
+    }
 }
