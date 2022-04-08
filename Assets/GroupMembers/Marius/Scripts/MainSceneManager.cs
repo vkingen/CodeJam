@@ -7,7 +7,7 @@ public class MainSceneManager : MonoBehaviour
 { 
     public static MainSceneManager instance;
 
-    [SerializeField] int currentSceneIndex;
+    //[SerializeField] int currentSceneIndex;
 
     private void Awake()
     {
@@ -24,11 +24,11 @@ public class MainSceneManager : MonoBehaviour
 
     private void Start()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     public void LoadNextScene(int index)
     {
-        SceneManager.LoadScene(currentSceneIndex + 1); //'1' is replaced by index if different minigames for different roles
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index); //'1' is replaced by index if different minigames for different roles
     }
 }
