@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 
+//Inspiration fra: https://www.youtube.com/watch?v=p8MzsDBI5EI
 {
     public float spawnRate = 1f;
     public GameObject hexagonPrefab;

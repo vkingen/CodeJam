@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Hexagon : MonoBehaviour
 
+//Inspiration fra: https://www.youtube.com/watch?v=p8MzsDBI5EI
 {
     public Rigidbody2D rb;
     public float shrinkSpeed = 3f;

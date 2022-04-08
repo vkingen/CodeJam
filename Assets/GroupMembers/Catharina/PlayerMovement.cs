@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 
-
+//Inspiration fra: https://www.youtube.com/watch?v=p8MzsDBI5EI
 {
     
     public float moveSpeed = 600f;
