@@ -1002,6 +1002,7 @@ MonoBehaviour:
   - {fileID: 1003020145}
   - {fileID: 291763577}
   - {fileID: 1070323823}
+  nextSceneIndex: 1
 --- !u!1 &2077654849
 GameObject:
   m_ObjectHideFlags: 0
