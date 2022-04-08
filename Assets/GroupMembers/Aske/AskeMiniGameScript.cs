@@ -10,8 +10,9 @@ public class AskeMiniGameScript : MonoBehaviour
     public int score = 0;
     public float AccelerationZ;
     bool moleHit = false;
-    float delayTimePause;
-    float delayTimeSpawn;
+    float delayTimeVisible;
+    float delayTimeNotVisible;
+    bool moleVisible = false;
 
     public GameObject Mole;
     public Transform[] SpawnPoint;
@@ -26,77 +27,65 @@ public class AskeMiniGameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         AccelerationZ = Input.acceleration.z;
-        Debug.Log(moleHit);
         if (moleHit == false)
         {
-            Debug.Log(moleHit);
-            Debug.Log("moleHit false");
             if (AccelerationZ > 2)
             {
-<<<<<<< Updated upstream:Assets/GroupMembers/Aske/HammerScript.cs
-                Mole.SetActive(false);
-                Debug.Log("acceleration is 2");
-                StartCoroutine(MolePoint());
-                moleHit = true;
-=======
                 if (moleVisible == true)
                 {
-                    //audioSource.PlayOneShot(AudioClip audioClip, Float volumeScale);
-                    Mole.SetActive(false);
-                    //((StartCoroutine(MolePoint());
-                    MolePoint();
                     moleHit = true;
+                    Mole.SetActive(false);
+                    MolePoint();
                 }
+
                 else
                 {
-                    Debug.Log("Lose");
+                    Debug.Log("lose");
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 }
->>>>>>> Stashed changes:Assets/GroupMembers/Aske/AskeMiniGameScript.cs
             }
         }
     }
 
-    IEnumerator MolePoint()
+    void MolePoint()
     {
+        score++;
+        ScoreText.text = score + "/10";
         Debug.Log("point");
         if (score < 10)
         {
-            Debug.Log(score);
-            score++;
-            ScoreText.text = score + "/10";
-            yield return new WaitForSeconds(delayTimePause);
-            delayTimePause = Random.Range(1, 3);
             moleHit = false;
-            Debug.Log(moleHit);
             SpawnMole();
-
         }    
 
-        //else
-        //{
-            
-        //}
+        else
+        {
+            Debug.Log("win");
+            MainSceneManager.instance.LoadNextScene(1); //change magic number
+        }
     }
 
     public void SpawnMole()
     {
         Mole.transform.position = SpawnPoint[Random.Range(0, SpawnPoint.Length)].transform.position;
         Mole.SetActive(true);
-        StartCoroutine(SwitchMole()); 
+        StartCoroutine(SwitchMole());
+        Debug.Log("spawn");
     }
 
     IEnumerator SwitchMole()
     {
         while (moleHit == false)
         {
-            delayTimeSpawn = Random.Range(2, 4);
-            yield return new WaitForSeconds(delayTimeSpawn);
-            Mole.SetActive(false);
-            delayTimeSpawn = Random.Range(0, 3);
-            yield return new WaitForSeconds(delayTimeSpawn);
+            delayTimeNotVisible = Random.Range(3, 3); //this comtrols the amount of time the mole is not visible
+            yield return new WaitForSeconds(delayTimeNotVisible);
             Mole.SetActive(true);
+            moleVisible = true;
+            delayTimeVisible = Random.Range(3, 3); //this comtrols the amount of time the mole is visible
+            yield return new WaitForSeconds(delayTimeVisible);
+            Mole.SetActive(false);
+            moleVisible = false;
         }
     }
 }

@@ -295,7 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701fb99bc65c5724da8213cdd4f3ef00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyText: {fileID: 0}
 --- !u!114 &359722078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +942,6 @@ MonoBehaviour:
   ScoreText: {fileID: 1244746474}
   score: 0
   AccelerationZ: 0
-  bonk: {fileID: 0}
   Mole: {fileID: 1135797484}
   SpawnPoint:
   - {fileID: 1506786113}
@@ -958,7 +956,6 @@ MonoBehaviour:
   - {fileID: 1423232259}
   - {fileID: 872372762}
   - {fileID: 1993918383}
-  nextSceneIndex: 0
 --- !u!1 &728099308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,7 +1663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Din mor
+  m_text: 0/10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

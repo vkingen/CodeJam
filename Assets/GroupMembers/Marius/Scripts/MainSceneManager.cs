@@ -31,4 +31,9 @@ public class MainSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index); //'1' is replaced by index if different minigames for different roles
     }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
 }

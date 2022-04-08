@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GroupMembers/Nor/NorsMiniGame.unity
-    guid: 315b8d7b4b3b123479b0c891a6612401
-  - enabled: 1
     path: Assets/GroupMembers/Nor/StartScreen/StartScreen.unity
     guid: bba8ce7fb923b4f9da11e5baa0dac494
   - enabled: 1
@@ -36,12 +33,15 @@ EditorBuildSettings:
     path: Assets/GroupMembers/Catharina/CatharinaMinigame.unity
     guid: b6f8f9397375833478260b18f154420e
   - enabled: 1
+    path: Assets/GroupMembers/Nor/NorsMiniGame.unity
+    guid: 315b8d7b4b3b123479b0c891a6612401
+  - enabled: 1
     path: Assets/GroupMembers/Nicola/Scenes/ShakeItForClueMinigame.unity
     guid: 783154b87a0cb1a49812e6873cae74ee
   - enabled: 1
     path: Assets/GroupMembers/Aske/AskeMiniGameScene.unity
     guid: 01627307a29e9a449a05ba8a75609078
   - enabled: 1
-    path: Assets/TextMesh Pro/Lasse/Scenes/Template.unity
+    path: Assets/TextMesh Pro/Lasse/Scenes/Testing/Template.unity
     guid: 506dbf23a978ae54a921f4710f5236be
   m_configObjects: {}
