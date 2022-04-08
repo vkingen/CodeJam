@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class HammerScript : MonoBehaviour
+public class AskeMiniGameScript : MonoBehaviour
 { 
     public TMP_Text ScoreText;
     public int score = 0;
@@ -35,10 +35,25 @@ public class HammerScript : MonoBehaviour
             Debug.Log("moleHit false");
             if (AccelerationZ > 2)
             {
+<<<<<<< Updated upstream:Assets/GroupMembers/Aske/HammerScript.cs
                 Mole.SetActive(false);
                 Debug.Log("acceleration is 2");
                 StartCoroutine(MolePoint());
                 moleHit = true;
+=======
+                if (moleVisible == true)
+                {
+                    //audioSource.PlayOneShot(AudioClip audioClip, Float volumeScale);
+                    Mole.SetActive(false);
+                    //((StartCoroutine(MolePoint());
+                    MolePoint();
+                    moleHit = true;
+                }
+                else
+                {
+                    Debug.Log("Lose");
+                }
+>>>>>>> Stashed changes:Assets/GroupMembers/Aske/AskeMiniGameScript.cs
             }
         }
     }
