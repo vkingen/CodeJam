@@ -9,10 +9,9 @@ public class ObstacleSpawner : MonoBehaviour
 
     public float delayTime = 2f;
 
-    private void Start()
+    public void SendWaves()
     {
         StartCoroutine(SpawnObjectWithDelay());
-
     }
 
     IEnumerator SpawnObjectWithDelay()
