@@ -138,6 +138,7 @@ public class RepeatPatternGame : MonoBehaviour
         if (_won == true)
         {
             ClosePanel();
+            MainSceneManager.instance.LoadNextScene(1);
         }
 
         EnableInteractableButtons();

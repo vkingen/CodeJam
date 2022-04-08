@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
+    public int index = 1;
+
     public void StartGame()
     {
-        //Loading to next scene. Finding the active scene and the build index and adding 1.
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        //mainSceneManager.LoadNextScene(index);
+        Debug.Log("Next Scene");
+        MainSceneManager.instance.LoadNextScene(index);
     }
 }
