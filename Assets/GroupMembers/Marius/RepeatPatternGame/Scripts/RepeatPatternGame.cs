@@ -56,7 +56,7 @@ public class RepeatPatternGame : MonoBehaviour
 
         _level = 1;
 
-        if(repeatPatternGamePanel == isActiveAndEnabled)
+        if(repeatPatternGamePanel == isActiveAndEnabled) //Only when the 'Panel' is active is the 'ColorOrder()' method running
         {
             StartCoroutine(ColorOrder());
         }
@@ -90,17 +90,17 @@ public class RepeatPatternGame : MonoBehaviour
         }
     }
 
-    public void ClosePanel()
+    public void ClosePanel() //Sets the 'Panel' gameobject not active
     {
         repeatPatternGamePanel.SetActive(false);
     }
 
-    public void OpenPanel()
+    public void OpenPanel() //Sets the 'Panel' gameobject to active
     {
         repeatPatternGamePanel.SetActive(true);
     }
 
-    IEnumerator ColorBlink(Color32 colorToBlink)
+    IEnumerator ColorBlink(Color32 colorToBlink) //Controls the colors that blink when winning or failing
     {
         DisableInteractableButtons();
 
