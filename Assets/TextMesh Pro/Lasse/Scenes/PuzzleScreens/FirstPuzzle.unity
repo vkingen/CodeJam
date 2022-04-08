@@ -955,7 +955,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1925338268}
+  - {fileID: 2078134838}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1721,7 +1721,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802361897}
   m_CullTransparentMesh: 0
---- !u!21 &1925338268
+--- !u!21 &2078134838
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -1730,7 +1730,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'KaffeplettenMaterial
 
-    84224'
+    87524'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 32
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
