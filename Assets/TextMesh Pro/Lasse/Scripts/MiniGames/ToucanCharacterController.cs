@@ -55,6 +55,7 @@ public class ToucanCharacterController : MonoBehaviour
         pointText.text = totalPoints.ToString();
         if (totalPoints >= 0)
         {
+            MainSceneManager.instance.LoadNextScene(1);
             Debug.Log("You Win");
         }
     }
