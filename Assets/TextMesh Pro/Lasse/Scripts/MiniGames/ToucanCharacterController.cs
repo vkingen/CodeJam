@@ -36,7 +36,7 @@ public class ToucanCharacterController : MonoBehaviour
         tutorial_Panel.SetActive(false);
         gameHasStarted = true;
         obstacleSpawner.SendWaves();
-        pointText.text = totalPoints.ToString();
+        pointText.text = totalPoints + "/" + 10; //.ToString();
     }
 
     private void FixedUpdate()
@@ -55,8 +55,8 @@ public class ToucanCharacterController : MonoBehaviour
     {
         totalPoints++;
         audioSource.Play();
-        pointText.text = totalPoints.ToString();
-        if (totalPoints >= 0)
+        pointText.text = totalPoints + "/" + 10;//.ToString();
+        if (totalPoints == 10)
         {
             MainSceneManager.instance.LoadNextScene(1);
             Debug.Log("You Win");

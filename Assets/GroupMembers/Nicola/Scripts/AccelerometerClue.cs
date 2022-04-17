@@ -5,7 +5,10 @@ using UnityEngine;
 public class AccelerometerClue : MonoBehaviour
 {
     public float thresh = 5;
-    public TMPro.TMP_Text text;
+
+    public TMPro.TMP_Text accText;
+    public TMPro.TMP_Text limitText;
+
     public int limit = 50;
 
     private bool _trigger = false;
@@ -24,7 +27,7 @@ public class AccelerometerClue : MonoBehaviour
     {
         if (Input.acceleration.magnitude > thresh)
         {
-            if (!_trigger)
+                if (!_trigger)
             {
                 _trigger = true;
                 _threshCounter++;
@@ -34,10 +37,16 @@ public class AccelerometerClue : MonoBehaviour
         else if (_trigger)
         {
             _trigger = false;
+            Debug.Log("false");
         }
 
-        if (text)
-            text.text = "Acceleration " + Input.acceleration.ToString();
+        if (accText && limitText)
+        {
+            accText.text = "Acceleration\n" + Input.acceleration.ToString();
+            limitText.text = _threshCounter + "/" + limit;
+        }
+            
+
     }
 
     public void EndGame()

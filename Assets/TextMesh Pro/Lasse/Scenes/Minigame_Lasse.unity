@@ -585,7 +585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 60
   newGravity: {x: -9.8, y: 0, z: 0}
-  totalPoints: 10
+  totalPoints: 0
   pointText: {fileID: 2080595917}
   tutorial_Panel: {fileID: 8865259640488195266}
 --- !u!65 &765994212
