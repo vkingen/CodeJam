@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Source: https://www.youtube.com/watch?v=PC02l13iew8
+
 public class RepeatPatternGame : MonoBehaviour
 {
     [SerializeField] GameObject[] buttons; //Array of buttons that are to be pressed based on the pattern. 
